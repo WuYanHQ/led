@@ -1,3 +1,31 @@
-build
-mx.scratch
-!.settings
+# ===== 编译输出 =====
+build/
+Debug/
+Release/
+*.o
+*.obj
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+*.su
+*.d
+
+# ===== CMake 生成文件 =====
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+*.ninja
+.ninja_log
+.ninja_deps
+
+# ===== CubeMX / CubeIDE 缓存（会变动，没必要跟踪）=====
+.mxproject
+.settings/
+
+# ===== 系统/编辑器杂项 =====
+.DS_Store
+Thumbs.db
+*.swp
